@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="calculator">
+            <input type="text" id="input" class="form-control mb-3" readonly>
+            <div class="row">
+                <button class="btn btn-primary col" onclick="appendNumber('1')">1</button>
+                <button class="btn btn-primary col" onclick="appendNumber('2')">2</button>
+                <button class="btn btn-primary col" onclick="appendNumber('3')">3</button>
+                <button class="btn btn-warning col" onclick="clearInput()">C</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col" onclick="appendNumber('4')">4</button>
+                <button class="btn btn-primary col" onclick="appendNumber('5')">5</button>
+                <button class="btn btn-primary col" onclick="appendNumber('6')">6</button>
+                <button class="btn btn-warning col" onclick="backspace()">←</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col" onclick="appendNumber('7')">7</button>
+                <button class="btn btn-primary col" onclick="appendNumber('8')">8</button>
+                <button class="btn btn-primary col" onclick="appendNumber('9')">9</button>
+                <button class="btn btn-warning col" onclick="performOperation('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col" onclick="appendNumber('0')">0</button>
+                <button class="btn btn-primary col" onclick="appendOperator('+')">+</button>
+                <button class="btn btn-primary col" onclick="appendOperator('-')">-</button>
+                <button class="btn btn-warning col" onclick="performOperation('*')">x</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col" onclick="performOperation('%')">%</button>
+                <button class="btn btn-primary col" onclick="performOperation('**')">^</button>
+                <button class="btn btn-primary col" onclick="calculate()">=</button>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-primary col" onclick="addToMemory()">M+</button>
+                <button class="btn btn-primary col" onclick="subtractFromMemory()">M-</button>
+                <button class="btn btn-warning col" onclick="clearMemory()">MC</button>
+                <button class="btn btn-warning col" onclick="recallMemory()">MR</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

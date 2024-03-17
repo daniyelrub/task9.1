@@ -1,0 +1,18 @@
+.calculator {
+    min-width: 100px;
+    min-height: 100px;
+    margin: auto;
+    border: 8px solid #c4baba;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: aqua;
+    word-spacing: 0cap;
+    word-break: keep-all;
+    
+}
+
+.container mt-5{color: #4b3f3f;
+     print-color-adjust: 5px;}
+
+.row{line-break:normal;
+color: #4b3f3f;}
